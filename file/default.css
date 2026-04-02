@@ -87,7 +87,7 @@ a {
 .bottom-btn {
   position: absolute;
   bottom: 1px;   /* доороос зай */
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
   z-index: 10;    /* canvas дээр дарагдахгүй */
 }
