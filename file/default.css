@@ -85,21 +85,26 @@ a {
 
 }
 .bottom-btn {
-  position: absolute;
-  bottom: 1px;   /* доороос зай */
-  left: 60%;
-  transform: translateX(-50%);
-  z-index: 10;    /* canvas дээр дарагдахгүй */
+    position: absolute;
+    left: 30px;      /* зүүн талаас зай */
+    bottom: 20px;    /* доод талаас зай */
+    z-index: 20;     /* canvas-аас дээш харагдуулах */
 }
 
 .bottom-btn button {
-  padding: 12px 28px;
-  border: none;
-  border-radius: 30px;
-  background: white;
-  color: #ff4d6d;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d6d;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.bottom-btn button:hover {
+    transform: scale(1.05);
+    background: #ff1e4d;
 }
