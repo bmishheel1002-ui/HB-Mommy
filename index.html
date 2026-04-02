@@ -13,6 +13,7 @@
     <script type="text/javascript" src="./file/jscex-async-powerpack.min.js"></script>
     <script type="text/javascript" src="./file/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="./file/love.js" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script>
         function playAudio() {
             var audio = document.getElementById("myAudio");
@@ -28,6 +29,9 @@
             <embed height="100" width="100" src="aud.mp3" />
         </audio>
         <div id="wrap">
+			<div class="bottom-btn">
+    <button onclick="launchConfetti()">Celebrate 🎊</button>
+</div>
             <div id="text">
                 <div id="code">
                     <span class="say">Хамгаас хайрт ээждээ 💞</span><br>
@@ -181,6 +185,13 @@
 
         runAsync().start();
     })();
+		function launchConfetti() {
+    confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.7 }
+    });
+}
     </script>
 </body>
 </html>
