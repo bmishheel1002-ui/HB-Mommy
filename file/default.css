@@ -85,10 +85,11 @@ a {
 
 }
 .bottom-btn {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: 20px;   /* доороос зай */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;    /* canvas дээр дарагдахгүй */
 }
 
 .bottom-btn button {
@@ -101,9 +102,4 @@ a {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-  transition: 0.3s;
-}
-
-.bottom-btn button:hover {
-  background: #ffe0ea;
 }
