@@ -87,7 +87,8 @@ a {
 .bottom-btn {
     position: absolute;
     right: 0;      /* зүүн талаас зай */
-    bottom: 0;    /* доод талаас зай */
+    bottom: 10px;    /* доод талаас зай */
+    transform: translateX(-50%);
     z-index: 20;     /* canvas-аас дээш харагдуулах */
 }
 
@@ -103,8 +104,8 @@ a {
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     transition: transform 0.2s;
 } 
-.bottom-btn button:hover {
+/* .bottom-btn button:hover {
     transform: scale(1.05);
     background: #ff1e4d;
-}
+} */
 
