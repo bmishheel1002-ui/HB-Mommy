@@ -87,7 +87,7 @@ a {
 .bottom-btn {
     position: absolute;
     right: 0;      /* зүүн талаас зай */
-    bottom: 10;    /* доод талаас зай */
+    bottom: 0;    /* доод талаас зай */
     z-index: 20;     /* canvas-аас дээш харагдуулах */
 }
 
